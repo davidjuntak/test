@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    working_directory: /go/src/github.com/davidjuntak/test
+    docker:
+    - image: circleci/golang:1.10
+    steps:
+    - checkout
+    - run:
+        name: Building the binary
+        command: go build
+    - run:
+        name: Testing unit test
+        command: go test
