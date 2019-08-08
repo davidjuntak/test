@@ -11,4 +11,7 @@ jobs:
         command: go build
     - run:
         name: Testing unit test
-        command: go test
+        command: ./go.test.sh
+    - run:
+        name: Running codecov
+        command: bash <(curl -s https://codecov.io/bash)
