@@ -6,10 +6,10 @@ import (
 )
 
 func main() {
-    result := util.Add(2, 3)
+    result := Add(2, 3)
     fmt.Println(result)
-    result = util.Minus(5, 3)
+    result = Minus(5, 3)
     fmt.Println(result)
-    result = util.Add(3, 3)
+    result = Add(3, 3)
     fmt.Println(result)
 }
