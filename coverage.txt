@@ -2,5 +2,5 @@
 mode: atomic
 github.com/davidjuntak/test/math.go:3.14,4.2 0 0
 github.com/davidjuntak/test/math.go:6.24,8.2 1 2
-github.com/davidjuntak/test/math.go:10.26,12.2 1 0
+github.com/davidjuntak/test/math.go:10.26,12.2 1 2
 github.com/davidjuntak/test/math.go:14.29,16.2 1 0
