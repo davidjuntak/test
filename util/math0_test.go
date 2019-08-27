@@ -1,11 +1,12 @@
-package main
+
+package util
 
 import (
     "testing"
     "reflect"
 )
 
-func TestAdd(t *testing.T) {
+func TestAdd0_0(t *testing.T) {
     tests := []struct {
         a    int
         b    int
@@ -24,61 +25,88 @@ func TestAdd(t *testing.T) {
     }
 
     for _, test := range tests {
-        result := Add(test.a, test.b)
+        result := Add0_0(test.a, test.b)
         if !reflect.DeepEqual(result, test.expected) {
-            t.Errorf("Test failed, expected: %d, result: %d", test.expected, result)
+            t.Errorf("Test failed")
         }
     }
 }
 
-func TestMinus(t *testing.T) {
+func TestAdd0_1(t *testing.T) {
     tests := []struct {
         a    int
         b    int
         expected int
     }{
         {
-            a: 3,
+            a: 1,
             b: 2,
-            expected: 1,
+            expected: 3,
         },
         {
-            a: 4,
+            a: 3,
             b: 2,
-            expected: 2,
+            expected: 5,
         },
     }
 
     for _, test := range tests {
-        result := Minus(test.a, test.b)
+        result := Add0_1(test.a, test.b)
         if !reflect.DeepEqual(result, test.expected) {
-            t.Errorf("Test failed, expected: %d, result: %d", test.expected, result)
+            t.Errorf("Test failed")
         }
     }
 }
 
-func TestMultiple(t *testing.T) {
+func TestAdd0_2(t *testing.T) {
     tests := []struct {
         a    int
         b    int
         expected int
     }{
         {
-            a: 3,
+            a: 1,
             b: 2,
-            expected: 6,
+            expected: 3,
         },
         {
-            a: 4,
+            a: 3,
             b: 2,
-            expected: 8,
+            expected: 5,
         },
     }
 
     for _, test := range tests {
-        result := Multiple(test.a, test.b)
+        result := Add0_2(test.a, test.b)
         if !reflect.DeepEqual(result, test.expected) {
-            t.Errorf("Test failed, expected: %d, result: %d", test.expected, result)
+            t.Errorf("Test failed")
         }
     }
 }
+
+func TestAdd0_3(t *testing.T) {
+    tests := []struct {
+        a    int
+        b    int
+        expected int
+    }{
+        {
+            a: 1,
+            b: 2,
+            expected: 3,
+        },
+        {
+            a: 3,
+            b: 2,
+            expected: 5,
+        },
+    }
+
+    for _, test := range tests {
+        result := Add0_3(test.a, test.b)
+        if !reflect.DeepEqual(result, test.expected) {
+            t.Errorf("Test failed")
+        }
+    }
+}
+
