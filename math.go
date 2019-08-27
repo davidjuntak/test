@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-    for j := 0; j < 200; j++ {
+    for j := 0; j < 5; j++ {
         dummyFunction := `
 package util
 `
@@ -51,7 +51,7 @@ func TestAdd%d_%d(t *testing.T) {
     }
 }
 `
-        for i := 0; i < 100; i++ {
+        for i := 0; i < 5; i++ {
             dummyFunction += fmt.Sprintf(template, j, i)
             dummyFunction2 += fmt.Sprintf(template2, j, i, j, i)
         }
