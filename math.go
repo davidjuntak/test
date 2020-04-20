@@ -32,8 +32,8 @@ func TestAdd%d_%d(t *testing.T) {
         expected int
     }{
         {
-            a: 1,
-            b: 2,
+            a: 2,
+            b: 4,
             expected: 3,
         },
         {
